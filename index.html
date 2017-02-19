@@ -14,7 +14,9 @@ layout: default
           <div class = "tag-img-icon">
           <img src="/images/calendar.svg" width="20px" /> 
           </div>
-          <span>{{ post.date | date: "%F"}}</span>
+          <div class = "post-list-icon-mate">
+            <span class="post-list__meta--tags-right">{{ post.date | date: "%F"}}</span>
+          </div>
         </time> 
         <div class = "tag-img-icon">
           <img src="/images/tag-icon.svg" width="20px" /> 
