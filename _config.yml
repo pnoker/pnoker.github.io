@@ -10,14 +10,13 @@ url: "https://pnoker.github.io/"
 
 # Comment
 comment:
-    # disqus: 张红元
-    duoshuo: 张红元 
+    duoshuo: pnoker 
 
 # Social
 social:
     weibo: Pnoter 
     github: pnoker
-    mail: peter-no@foxmail.com
+    mail: pnokers@gmail.com
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
