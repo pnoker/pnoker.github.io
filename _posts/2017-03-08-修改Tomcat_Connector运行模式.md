@@ -10,8 +10,11 @@ Tomcat是一个小型的轻量级应用服务器，也是JavaEE开发人员最�
 下面，我们先大致了解Tomcat Connector的三种运行模式。
 
 ### bio
-bio(blocking I/O)，顾名思义，即阻塞式I/O操作，表示Tomcat使用的是传统的Java I/O操作(即java.io包及其子包)。Tomcat在默认情况下，就是以bio模式运行的。遗憾的是，就一般而言，bio模式是三种运行模式中性能最低的一种。我们可以通过Tomcat Manager来查看服务器的当前状态。[查看Tomcat Manager用户配置](http://www.365mini.com/page/tomcat-manager-user-configuration.htm)
+bio(blocking I/O)，顾名思义，即阻塞式I/O操作，表示Tomcat使用的是传统的Java I/O操作(即java.io包及其子包)。Tomcat在默认情况下，就是以bio模式运行的。遗憾的是，就一般而言，bio模式是三种运行模式中性能最低的一种。我们可以通过Tomcat Manager来查看服务器的当前状态。
+[查看Tomcat Manager用户配置](http://www.365mini.com/page/tomcat-manager-user-configuration.htm)
+
 ![](/images/posts/tomcat/tomcat-status-bio.png)
+
 
 ### nio
 nio(new I/O)，是Java SE 1.4及后续版本提供的一种新的I/O操作方式(即java.nio包及其子包)。Java nio是一个基于缓冲区、并能提供非阻塞I/O操作的Java API，因此nio也被看成是non-blocking I/O的缩写。它拥有比传统I/O操作(bio)更好的并发运行性能。要让Tomcat以nio模式来运行也比较简单，我们只需要在Tomcat安装目录/conf/server.xml文件中将如下配置：
@@ -28,6 +31,7 @@ redirectPort="8443" />
 ```
 此时，我们就可以在Tomcat Manager中看到当前服务器状态页面的HTTP协议的Connector运行模式已经从```http-bio-8080```变成了```http-nio-8080```。
 ![](/images/posts/tomcat/tomcat-status-nio.png)
+
 
 ### apr
 apr(Apache Portable Runtime/Apache可移植运行时)，是Apache HTTP服务器的支持库。你可以简单地理解为，Tomcat将以JNI的形式调用Apache HTTP服务器的核心动态链接库来处理文件读取或网络传输操作，从而大大地提高Tomcat对静态文件的处理性能。 Tomcat apr也是在Tomcat上运行高并发应用的首选模式。如果我们的Tomcat不是在apr模式下运行，在启动Tomcat的时候，我们可以在日志信息中看到类似如下信息：
