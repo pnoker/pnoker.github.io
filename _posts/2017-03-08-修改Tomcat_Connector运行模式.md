@@ -11,7 +11,7 @@ Tomcat是一个小型的轻量级应用服务器，也是JavaEE开发人员最�
 
 ### bio
 bio(blocking I/O)，顾名思义，即阻塞式I/O操作，表示Tomcat使用的是传统的Java I/O操作(即java.io包及其子包)。Tomcat在默认情况下，就是以bio模式运行的。遗憾的是，就一般而言，bio模式是三种运行模式中性能最低的一种。我们可以通过Tomcat Manager来查看服务器的当前状态。
-[查看Tomcat Manager用户配置](http://www.365mini.com/page/tomcat-manager-user-configuration.htm)
+[查看Tomcat Manager用户配置](https://pnoker.github.io/2017/03/Tomcat_Manager用户配置/)
 
 ![](/images/posts/tomcat/tomcat-status-bio.png)
 
