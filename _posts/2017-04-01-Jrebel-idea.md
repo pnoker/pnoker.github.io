@@ -26,7 +26,7 @@ tar zxvf jrebel.tar.gz
 
 ```shell
 rm -r /Users/pnoker/Library/Application Support/IntelliJIdea2017.1/jr-ide-idea/lib/*
-cp /Users/pnoker/Downloads/jrebel/*  /Users/pnoker/Library/Application Support/IntelliJIdea2017.1/jr-ide-idea/lib
+cp /Users/pnoker/Downloads/jrebel/*  /Users/pnoker/Library/Application Support/IntelliJIdea2017.1/jr-ide-idea/lib/
 ```
 
 **2.授权文件替换**
