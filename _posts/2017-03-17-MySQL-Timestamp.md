@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 设置MySQL中时间戳insert和update自动更新
-date: 2016-12-30
+date: 2017-03-17
 tag: MySQL
 ---
 

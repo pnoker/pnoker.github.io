@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MySQL中int、bigint、smallint和tingint的区别
-date: 2016-12-29
+date: 2017-03-16
 tag: MySQL
 ---
 

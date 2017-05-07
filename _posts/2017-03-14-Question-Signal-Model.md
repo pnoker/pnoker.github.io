@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 问：单例模式?
-date: 2016-12-27
+date: 2017-03-14
 tag: 设计模式
 ---
 

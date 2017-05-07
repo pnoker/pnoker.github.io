@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Http请求中的Get和Post浅谈
-date: 2016-12-22
+date: 2017-03-09
 tag: Hadoop
 ---
 

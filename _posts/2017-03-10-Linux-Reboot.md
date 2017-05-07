@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu 重启 & 关机
-date: 2016-12-23
+date: 2017-03-10
 tag: Linux
 ---
 

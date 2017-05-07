@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu 配置网络
-date: 2016-12-24
+date: 2017-03-11
 tag: Linux
 ---
 
