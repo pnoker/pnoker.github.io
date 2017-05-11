@@ -70,5 +70,13 @@ console.log(user2.name); // Barry Allen
 console.log(user2.age); // 25  
 ```
 
+### 对数组元素进行洗牌
 
+如果要像外部库Lodash那样对数据元素重新洗牌
 
+```js
+var list = [1, 2, 3];  
+console.log(list.sort(function() {  
+    return Math.random() - 0.5
+})); // [2,1,3]
+```
