@@ -7,7 +7,7 @@ tag: Mybatis
 
 ### 前言
 
-在使用Mybatis生成的Example进行查询时可以发现Critical类只提供了andXXXExample的方法，而在Example中却提供了`or`方法，因此可以使用`or`进行简单的组合查询了。
+在使用Mybatis生成的Example进行查询时可以发现`Critical`类只提供了`andXXXExample`的方法，而在`Example`中却提供了`or`方法，因此可以使用`or`进行简单的组合查询了。
 
 ### 查询条件
 

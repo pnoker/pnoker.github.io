@@ -20,7 +20,5 @@ title: 关于我
 <a target="_blank" href="http://blog.csdn.net/pnoter"> 心无止境 </a>
 里面有一些关于 Java 、linux 和 Spring 的文章。
 
-{% include comments.html %}
-
 
 
