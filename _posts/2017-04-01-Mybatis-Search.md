@@ -11,9 +11,11 @@ tag: Mybatis
 
 ### 查询条件
 
-`a = ? and ( b = ? or c = ? )` 不支持
-`( a = ? and b = ? ) or ( c = ? and d = ? )` 支持
-`( a= ? ) or ( b = ? )` 支持
+`a = ? and ( b = ? or c = ? )`    不支持
+
+`( a = ? and b = ? ) or ( c = ? and d = ? )`    支持
+
+`( a= ? ) or ( b = ? )`    支持
 
 ### 测试
 
