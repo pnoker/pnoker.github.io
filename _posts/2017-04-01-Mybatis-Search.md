@@ -29,8 +29,12 @@ UserExample.Criteria criteria2 = example.createCriteria();
 criteria2.andUsernameLike("%" + content + "%");
 example.or(criteria2);
 List<User> list = userService.countByExample(example);
+```
 
-//生成的SQL语句为：select count(*) from user WHERE ( name like ? ) or( username like ? )
+生成的SQL语句为：
+
+```sql
+select count(*) from user WHERE ( name like ? ) or( username like ? )
 ```
 
 方法二:
@@ -40,6 +44,10 @@ UserExample example = new UserExample(start, limit);
 example.or().andNameLike("%" + content + "%");
 example.or().andUsernameLike("%" + content + "%");
 List<User> list = userService.countByExample(example);
+```
 
-//生成的SQL语句为：select count(*) from user WHERE ( name like ? ) or( username like ? )
+生成的SQL语句为：
+
+```sql
+select count(*) from user WHERE ( name like ? ) or( username like ? )
 ```
