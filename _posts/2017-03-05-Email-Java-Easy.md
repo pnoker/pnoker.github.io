@@ -60,6 +60,7 @@ tag: Email
 >8.保存邮件到本地
 
 
+
 ### 代码实现
 
 亲测没问题
@@ -173,16 +174,16 @@ public class SendMail {
         MimeMessage message = new MimeMessage(session);
 
         // 2. From: 发件人
-        message.setFrom(new InternetAddress(sendMail, "某宝网", "UTF-8"));
+        message.setFrom(new InternetAddress(sendMail, "测试账号", "UTF-8"));
 
         // 3. To: 收件人（可以增加多个收件人、抄送、密送）
-        message.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress(receiveMail, "XX用户", "UTF-8"));
+        message.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress(receiveMail, "测试用户", "UTF-8"));
 
         // 4. Subject: 邮件主题
-        message.setSubject("打折钜惠", "UTF-8");
+        message.setSubject("这是一个测试主题", "UTF-8");
 
         // 5. Content: 邮件正文（可以使用html标签）
-        message.setContent("XX用户你好, 今天全场5折, 快来抢购, 错过今天再等一年。。。", "text/html;charset=UTF-8");
+        message.setContent("测试内容，该部分为邮件正文，可使用HTML进行编辑", "text/html;charset=UTF-8");
 
         // 6. 设置发件时间
         message.setSentDate(new Date());
