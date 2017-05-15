@@ -61,6 +61,8 @@ tag: Email
 
 ### 代码实现
 
+亲测没问题
+
 ```java
 import javax.mail.MessagingException;
 import javax.mail.NoSuchProviderException;
