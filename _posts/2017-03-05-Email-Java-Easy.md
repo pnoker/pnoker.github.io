@@ -12,6 +12,7 @@ tag: Email
 ### Java Mail Jar
 
 在Java的标准的JDK中不包含Java Mail的，要是使用Java Mail需要去Java官方网站下载封装好的Java Mail的类库，即:
+
 [javax.mail](http://mvnrepository.com/artifact/javax.mail/javax.mail-api),
 
 [com.sun.mail](http://mvnrepository.com/artifact/javax.mail/javax.mail)。
