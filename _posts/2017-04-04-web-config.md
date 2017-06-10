@@ -72,6 +72,23 @@ sudo aptitude install git
 sudo aptitude install mysql-server
 会提示设置密码，视情况而定
 ```
+创建一个用户，并且授权给用户
+
+```bash
+#以root的身份登录mysql
+mysql -u root -p
+create user 'username'@'host' identified by 'password'; 
+grant privileges on databasename.tablename to 'username'@'host';
+[注]
+privileges - 用户的操作权限,如SELECT , INSERT , UPDATE 等
+databasename - 数据库名
+tablename-表名
+例子：
+grant all on databasename.scmp to 'sia'@'%';
+grant all on *.* to 'sia'@'%';
+#修改密码
+set password for 'username'@'host' = password('newpassword');
+```
 
 ### 配置 Tomcat 随系统自启
 
