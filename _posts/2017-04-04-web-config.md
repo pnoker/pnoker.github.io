@@ -130,3 +130,30 @@ exit 0
 git config --global user.name username
 $ git config --global user.email your@mail.com
 ```
+
+### 问题1：卸载系统自带的openjdk
+
+```bash
+rpm -qa | grep java
+rpm -e --nodeps java-xxx
+```
+
+### 问题2：生成sshKey
+
+```bash
+ssh-keygen -t rsa
+#复制到远程机器
+ssh-copy-id username@hostname
+
+[注]
+username:远程主机用户名，例intel
+hostname:远程主机host，例192.168.1.10/hadoop-1
+ssh-copy-id intel@hadoop-1
+```
+
+### 问题3：文件远程复制
+
+```bash
+#文件传输
+scp -r hbase intel@hadoop-1:/usr/local
+```
