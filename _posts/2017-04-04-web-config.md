@@ -128,7 +128,7 @@ exit 0
 
 ```bash
 git config --global user.name username
-$ git config --global user.email your@mail.com
+git config --global user.email your@mail.com
 ```
 
 ### 问题1：卸载系统自带的openjdk
