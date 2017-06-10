@@ -79,7 +79,6 @@ sudo aptitude install mysql-server
 mysql -u root -p
 create user 'username'@'host' identified by 'password'; 
 grant privileges on databasename.tablename to 'username'@'host';
-flush privileges;
 [注]
 privileges - 用户的操作权限,如SELECT , INSERT , UPDATE 等
 databasename - 数据库名
