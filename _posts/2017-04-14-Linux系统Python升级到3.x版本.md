@@ -22,7 +22,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 #### 下载地址
 
 [Python mirrors.sohu](http://mirrors.sohu.com/python)
-
 选择合适版本号进行下载，本人下载的是3.5.1版本 `Python-3.5.1.tgz`
 
 #### 解压
@@ -38,13 +37,15 @@ tar zxvf Python-3.5.1.tgz
 yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
 ```
 
-#### 正式安装
+#### 开始安装
 
 ```bash
 cd Python-3.5.1
+#设置安装路径，建议安装在/usr/local下，这样便于统一管理，也防止误删
 ./configure --prefix=/usr/local/python3.5 
 make 
-sudo make install 
+sudo make install
+#备份系统python，设置新的Python到系统bin中去
 sudo mv /usr/bin/python /usr/bin/python.bak  
 sudo ln -s /usr/local/python3.5/bin/python3.5 /usr/bin/python 
 ```
