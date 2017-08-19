@@ -34,7 +34,7 @@ tar zxvf Python-3.5.1.tgz
 
 ```bash
 #centos
-yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
+sudo yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
 ```
 
 #### 开始安装
