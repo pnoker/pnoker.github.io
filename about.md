@@ -5,20 +5,17 @@ title: 关于我
 
 一个 Java Web 开发者，喜欢研究一些新技术。
 <p>
-平时喜欢整理个人博客、逛技术论坛、学习新技术和打游戏。
+平时喜欢整理个人博客、逛技术论坛、学习新技术和打游戏。<br/>
+"发现问题，解决问题，不要绕开问题的本身，多做事情，不会吃亏，即使不是你的事情。" ——多隆
+</p><br/>
 <p>
-了解一些 前端(Extjs、Boostrap)、Linux、数据库、Java、Spring 基本概念 和 Python 的简单用法。
+流浪的人，不许掉眼泪！<br/>
+在时间的长流里，你不过是一颗毫不起眼的尘埃，终将消散。他们说：你无法延长生命的长度，但你可以让你生命的宽度加以延伸，活出精彩，一颗尘埃的跳舞也是有意义的吧。刘同说：你的孤独，虽败犹荣。那么你呢？你孤独吗？你途中失败了吗？你感到光荣吗？
+</p>
 
-<p>
-
-所在单位
-<a target="_blank" href="http://www.sia.cn/"> 中科院沈阳自动化研究所 </a>
-是一个研究机器人、工业自动化和光电信息处理技术的单位，无论你是运营、产品、开发 或者是App终端用户都可以了解下我们单位。
-<p>
-
-推荐一个我的 CSDN 博客
-<a target="_blank" href="http://blog.csdn.net/pnoter"> 心无止境 </a>
-里面有一些关于 Java 、linux 和 Spring 的文章。
+推荐一个我的 GitHub
+<a target="_blank" href="https://github.com/pnoker"> Pnoker </a>
+里面有一些关于 Java 、linux 和 Spring 的代码，虽然写得不好:stuck_out_tongue_winking_eye:。
 
 
 
