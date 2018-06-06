@@ -39,38 +39,6 @@
             async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
     </script>
 
-    <!-- 百度自动推送 -->
-    <script>
-        (function () {
-            var bp = document.createElement('script');
-            var curProtocol = window.location.protocol.split(':')[0];
-            if (curProtocol === 'https') {
-                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-            }
-            else {
-                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-            }
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(bp, s);
-        })();
-
-        window._bd_share_config = {
-            "common": {
-                "bdSnsKey": {},
-                "bdText": "",
-                "bdMini": "2",
-                "bdMiniList": ["weixin", "sqq", "mail", "tsina", "renren", "fbook", "twi", "linkedin", "print", "evernotecn", "copy"],
-                "bdPic": "",
-                "bdStyle": "1",
-                "bdSize": "24"
-            },
-            "slide": {"type": "slide", "bdImg": "2", "bdPos": "right", "bdTop": "0"},
-            "image": {"viewList": ["weixin", "sqq", "tsina", "mail"], "viewText": "分享到：", "viewSize": "16"},
-            "selectShare": {"bdContainerClass": null, "bdSelectMiniList": ["weixin", "sqq", "tsina", "mail"]}
-        };
-        with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
-    </script>
-
     <!-- 百度统计 -->
     {% if site.baidu.id %}
     <script>
@@ -86,7 +54,7 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     {% if site.ga.id %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120480516-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga.id}}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
