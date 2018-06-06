@@ -14,20 +14,20 @@ tag: Spring注解系列
 
 ### @Component
 
-#### 第一种写法：@Component（"xxxx"）
+#### **第一种写法：@Component（"xxxx"）**
 
 这种注解带有name属性值，在使用getBean获取bean时，beanId需要填写name，否则报错
 
-#### 第二种写法：@Component
+#### **第二种写法：@Component**
 
 这种注解相反并不需要填写name，而是more以类名`小驼峰`方式获取
 
-#### 解释
+#### **解释**
 
 `@component`（把普通pojo实例化到spring容器中，相当于配置文件中的 `<bean id="" class=""/>` ）
 泛指各种组件，就是说当我们的类不属于各种归类的时候（不属于`@Controller`、`@Services`等的时候），我们就可以使用`@Component`来标注这个类。
 
-#### 案例
+#### **案例**
 
 ```xml
 <context:component-scan base-package="com.*"> 
