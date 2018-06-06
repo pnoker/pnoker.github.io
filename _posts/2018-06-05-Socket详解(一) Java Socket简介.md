@@ -17,16 +17,45 @@ socket源于unix，延续了 “一切皆文件” 的概念，都使用 “打�
 
 Server ： `socket`->`bind`->`listen`->`accept`->`receive`->`close`
 
-```seq
-Server->socket():创建socket
-sokcet()->bind():绑定socket和端口号
-bind()->listen():监听端口号
-listen()->accept():接收客户端连接请求
-accept()->recive():送socket中读取字符
-recive()->close():关闭socket
-```
+flow
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: get_hotel_ids|past
+op2=>operation: get_proxy|current
+sub1=>subroutine: get_proxy|current
+op3=>operation: save_comment|current
+op4=>operation: set_sentiment|current
+op5=>operation: set_record|current
+cond1=>condition: ids_remain空?
+cond2=>condition: proxy_list空?
+cond3=>condition: ids_got空?
+cond4=>condition: 爬取成功??
+cond5=>condition: ids_remain空?
+io1=>inputoutput: ids-remain
+io2=>inputoutput: proxy_list
+io3=>inputoutput: ids-got
+st->op1(right)->io1->cond1
+cond1(yes)->sub1->io2->cond2
+cond2(no)->op3
+cond2(yes)->sub1
+cond1(no)->op3->cond4
+cond4(yes)->io3->cond3
+cond4(no)->io1
+cond3(no)->op4
+cond3(yes, right)->cond5
+cond5(yes)->op5
+cond5(no)->cond3
+op5->e
+
 
 Client ： `socket`->`connect`->`send`->`close`
+
+```seq
+Client->socket():创建socket
+sokcet()->connect():连接目标socket服务器
+connect()->send():发送信息
+send()->close():关闭socket
+```
 
 server端需要获取ip和绑定端口号，让client调用，所以需要bind和listern
 
