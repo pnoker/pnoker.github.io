@@ -5,8 +5,6 @@ date: 2018-06-05
 tag: Java
 ---
 
-[<-返回Java Socket简介](http://pnoker.top/2018/06/Socket%E8%AF%A6%E8%A7%A3(%E4%B8%80)-Java-Socket%E7%AE%80%E4%BB%8B/)
-
 ### Server
 ```java
 public class SocketServer {
