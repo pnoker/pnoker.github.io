@@ -34,4 +34,27 @@ tag: Spring注解系列
 ```
 
 上面的这个例子是引入 `Component` 组件的例子，其中 `base-package` 表示为需要扫描的所有子包。 
-共同点：被 `@controller` 、 `@service` 、 `@repository` 、 `@component` 注解的类，都会把这些类纳入进spring容器中进行管理
+
+### 拓展
+
+1.@controller 控制器（注入服务）
+
+```text
+用于标注控制层，相当于struts中的action层
+```
+
+2.@service 服务（注入dao）
+
+```text
+用于标注服务层，主要用来进行业务的逻辑处理
+```
+
+3.@repository（实现dao访问）
+
+```text
+用于标注数据访问层，也可以说用于标注数据访问组件，即DAO组件
+```
+
+### 共同点
+
+被 `@controller` 、 `@service` 、 `@repository` 、 `@component` 注解的类，都会把这些类纳入进spring容器中进行管理。
