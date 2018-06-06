@@ -50,12 +50,7 @@ op5->e
 
 Client ： `socket`->`connect`->`send`->`close`
 
-```seq
-Client->socket():创建socket
-sokcet()->connect():连接目标socket服务器
-connect()->send():发送信息
-send()->close():关闭socket
-```
+
 
 server端需要获取ip和绑定端口号，让client调用，所以需要bind和listern
 
