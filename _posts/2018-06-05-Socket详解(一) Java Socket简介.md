@@ -17,7 +17,7 @@ socket源于unix，延续了 “一切皆文件” 的概念，都使用 “打�
 
 Server ： `socket`->`bind`->`listen`->`accept`->`receive`->`close`
 
-flow
+```flow
 st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End:>http://www.google.com
 op1=>operation: get_hotel_ids|past
@@ -46,6 +46,7 @@ cond3(yes, right)->cond5
 cond5(yes)->op5
 cond5(no)->cond3
 op5->e
+```
 
 
 Client ： `socket`->`connect`->`send`->`close`
