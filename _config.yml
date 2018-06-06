@@ -1,11 +1,11 @@
 # Basic
 title: 张红元
 subtitle: Pnoker
-description: 欢迎来到我的个人站，学习使我快乐~
+description: 学习使我快乐~
 # 头像里面的标题
 avatarTitle: Pnoker
 # 头像里面的描述
-avatarDesc: Spring / 大数据 / 机器学习
+avatarDesc: Java/大数据/机器学习/物联网
 url: "http://pnoker.top/"
 
 # Comment
@@ -26,8 +26,7 @@ baidu:
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
 ga:
-    id: UA-84134159-3   
-    host: auto  
+    id: UA-120480516-1
 
 permalink: /:year/:month/:title/
 # Format
